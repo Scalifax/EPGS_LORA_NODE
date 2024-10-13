@@ -34,9 +34,4 @@ idf_component_register(
 				"lora/include"
 				"rs485/include"
 				"ssd1306/include"
-				"/home/alberti/esp/v5.0.6/esp-idf/components/driver/include"
-				"/home/alberti/esp/v5.0.6/esp-idf/components/esp_ringbuf/include"
-				"/home/alberti/esp/v5.0.6/esp-idf/components/esp_hw_support/include"
-				"/home/alberti/esp/v5.0.6/esp-idf/components/esp_timer/include"
-				"/home/alberti/esp/v5.0.6/esp-idf/components/driver/deprecated"
 			)
