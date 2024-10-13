@@ -1,0 +1,41 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "runepgs.h": "c",
+        "task.h": "c",
+        "semphr.h": "c",
+        "freertos.h": "c",
+        "cstdint": "c",
+        "epgs_wrapper.h": "c",
+        "stdio.h": "c",
+        "epgs_structures.h": "c",
+        "epgs.h": "c",
+        "string.h": "c",
+        "pg.h": "c",
+        "epgs_controller.h": "c",
+        "ng_epgs_hash.h": "c",
+        "ringbuf.h": "c",
+        "uart.h": "c",
+        "uart_types.h": "c",
+        "queue.h": "c",
+        "typeinfo": "c",
+        "esp_timer.h": "c",
+        "ng_hash_table.h": "c",
+        "esp_log.h": "c",
+        "esp_attr.h": "c",
+        "pcnt.h": "c",
+        "stdint.h": "c",
+        "bitset": "c",
+        "chrono": "c",
+        "algorithm": "c",
+        "gpio.h": "c",
+        "portmacro.h": "c",
+        "oled.h": "c",
+        "stdlib.h": "c"
+    },
+    "idf.port": "/dev/ttyUSB0",
+    "idf.openOcdConfigs": [
+        "board/esp32-wrover-kit-3.3v.cfg"
+    ],
+    "idf.flashType": "UART"
+}
