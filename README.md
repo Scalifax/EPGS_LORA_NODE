@@ -28,3 +28,7 @@ O EPGS facilita a comunicação IoT da estação, integrando uma biblioteca RS48
 - **Display OLED SSD1306**: Tela de visualização para feedback e configuração.
 - **LoRa**: Tecnologia de comunicação sem fio de longo alcance e baixa potência.
 - **Nova Genesis**: Arquitetura de rede alternativa ao TCP/IP, projetada pelo prof. Alberti, também é chamada de "a internet do futuro".
+
+## Ao usuário
+
+Caso for utilizar o código, não se esqueça de alterar na linha 54 do arquivo "components/epgs/runepgs.c" o MAC address que está definido para aquele que será utilizado no Gateway do projeto.
