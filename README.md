@@ -1,35 +1,30 @@
-| Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-S2 | ESP32-S3 |
-| ----------------- | ----- | -------- | -------- | -------- | -------- |
+# EPGS - Nó Embarcado para Rede Nova Genesis
 
-# _Sample project_
+![Versão](https://img.shields.io/badge/versão-1.1.0-green.svg)
+![Status](https://img.shields.io/badge/status-Em%20Desenvolvimento-yellow.svg)
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+## Introdução
 
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
+Bem-vindo ao **EPGS** (Embarked Proxy Gateway Service)! Este programa é um nó de rede que pode se comunicar com a **Nova Genesis**, projetado para operar de maneira embarcada no dispositivo **Heltec LoRa 32 v2**. Ele utiliza o **ESP-IDF** como compilador, e esta versão do EPGS foi desenvolvida para o projeto **Estação Genesis**, uma estação meteorológica avançada que coleta dados climáticos e realiza previsões do tempo.
 
+O EPGS facilita a comunicação IoT da estação, integrando uma biblioteca RS485 personalizada para leitura de sensores climáticos, utilizando o módulo PCNT do ESP32 para contar sensores de pulso, além de contar com um display OLED SSD1306 paara exibição e um módulo LoRa para a transmissão física dos dados.
 
+## Características
 
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
+- **Operação Embarcada**: Desenvolvido para o dispositivo Heltec LoRa 32 v2.
+- **Compatibilidade com Nova Genesis**: Integrado à arquitetura de rede Nova Genesis, porém desenvolvido de maneira separada ao projeto principal.
+- **Comunicação RS485**: Biblioteca RS485 programada manualmente para leitura eficiente de sensores climáticos.
+- **Módulo PCNT do ESP32**: Utilização do módulo PCNT para contagem de pulsos e gerenciamento de sensores desse tipo.
+- **Display OLED SSD1306**: Interface visual para monitoramento durante a configuração da rede.
+- **Transmissão LoRa**: Comunicação física robusta e de longo alcance utilizando LoRa.
+- **Baixo Consumo de Energia**: Otimizado para operações eficientes em dispositivos embarcados.
 
-## Example folder contents
+## Tecnologias Utilizadas
 
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
-
-```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
-```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
+- **Heltec LoRa 32 v2**: Plataforma de hardware embarcado baseada no ESP32.
+- **ESP-IDF**: Framework de desenvolvimento oficial para ESP32.
+- **RS485**: Protocolo de comunicação serial para conexão de sensores climáticos.
+- **Módulo PCNT do ESP32**: Contador de pulsos para leitura de sensores.
+- **Display OLED SSD1306**: Tela de visualização para feedback e configuração.
+- **LoRa**: Tecnologia de comunicação sem fio de longo alcance e baixa potência.
+- **Nova Genesis**: Arquitetura de rede alternativa ao TCP/IP, projetada pelo prof. Alberti, também é chamada de "a internet do futuro".
